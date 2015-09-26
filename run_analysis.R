@@ -165,10 +165,7 @@ identical(names(train_total),names(test_total))
 big_data = merge(train_total, test_total, 
                  by.x = names(train_total),
                  by.y = names(test_total), all =TRUE)
-big_data_name = 'big_data.txt'
 
-### Saving to .csv big_data
-## write.table(big_data, file = big_data_name, row.name=FALSE)
 ### mean for all measurements
 mean_big = sapply(big_data[,2:length(big_data)]
           ,FUN = mean)
@@ -183,7 +180,7 @@ summ_data = data.frame(mean_big, sd_big)
 colnames(summ_data) = c('Mean_of_each_measurement',
                         'Standard_deviation_of_each_measurement')
 
-### Saving to .csv
+### Saving to .txt
 summ_data_name = 'summary_measurements.txt'
 write.table(summ_data, file = summ_data_name, row.name=FALSE)
 
