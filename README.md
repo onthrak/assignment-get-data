@@ -5,7 +5,8 @@ This folder contains:
 2) run_analysis.R script
 Running script creates summary_measurements.txt in working directory
 if  working directory has getdata-projectfiles-UCI HAR Dataset folder
-
+3) find_val.R script (minor helper script, it helps user get values depends on choosen id)
+find_val.R script CANNOT find mutliple id`s values!
 
 so for future analysis this folder should contain also:
 

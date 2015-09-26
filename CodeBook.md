@@ -47,5 +47,15 @@ body_acc_1 to body_acc_128 - values for body acceleration
 body_gyro_1 to body_gyro_128 - values for body angular velocity
 total_acc_1 to total_acc_128 -  values for acceleration signal
 
+ID`s:
+=========================================
+
+The tidy dataset (summary_measurements.txt)  contains values for id from 1 to 128
+The rownames gives information, whose value is. For example:
+body_gyro_28 mean that this is mean and standard deviation for body acceleration for 28th ID
+
+For better selection, user can use minor helper function in find_val.R file
+find_val.R CANNOT BE USED FOR MULTIPLE ID`S !. It only select values for ONE ID
+
 
 
